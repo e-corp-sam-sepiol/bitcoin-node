@@ -114,3 +114,5 @@ We can confirm the loop request has been submitted by checking the `RTL` web das
 [![https://i.imgur.com/6butY5F.png](https://i.imgur.com/6butY5F.png "https://i.imgur.com/6butY5F.png")](https://i.imgur.com/6butY5F.png "https://i.imgur.com/6butY5F.png")
 
 The loop out process will typically take about 30 minutes until you will see further progress from `loop monitor`. Once we see `LOOP_OUT PREIMAGE_REVEALED` in the `loop monitor` output, we will know the Loop Out attempt will succeed.
+
+[![https://i.imgur.com/ugwanXq.png](https://i.imgur.com/ugwanXq.png "https://i.imgur.com/ugwanXq.png")](https://i.imgur.com/ugwanXq.png "https://i.imgur.com/ugwanXq.png")
