@@ -2,7 +2,6 @@
 
 #### [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
 
-```
 The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trustedthird parties.
 
 Funds are placed into a two-party, multisignature "channel" bitcoin address. This channel is represented as an entry on the bitcoin public ledger. In order to spend funds from the channel, both parties must agree on the new balance. The current balance is stored as the most recent transaction signed by both parties, spending from the channel address. To make a payment, both parties sign a new exit transaction spending from the channel address. All old exit transactions are invalidated by doing so. 
@@ -10,8 +9,6 @@ Funds are placed into a two-party, multisignature "channel" bitcoin address. Thi
 The Lightning Network does not require cooperation from the counterparty to exit the channel.  Both parties have the option to unilaterally close the channel, ending their relationship. Since all parties have multiple multisignature channels with many different users on this network, one can send a payment to any other party across this network.
 
 By embedding the payment conditional upon knowledge of a secure cryptographic hash, payments can be made across a network of channels without the need for any party to have unilateral custodial ownership of funds. The Lightning Network enables what was previously not possible with trusted financial systems vulnerable to monopolies—without the need for custodial trust and ownership, participation on the network can be dynamic and open for all.
-```
-
 
 ### Managing Channel Balances
 [![channel_1](https://i.imgur.com/HQI3THY.png "channel_1")](https://i.imgur.com/HQI3THY.png "channel_1")
