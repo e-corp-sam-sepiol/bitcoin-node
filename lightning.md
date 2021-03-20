@@ -61,6 +61,7 @@ loop monitor
 ```
 
 Identify the channel you want to rebalance.
+
 [![https://i.imgur.com/hPLvkZB.png](https://i.imgur.com/hPLvkZB.png "https://i.imgur.com/hPLvkZB.png")](https://i.imgur.com/hPLvkZB.png "https://i.imgur.com/hPLvkZB.png")
 
 `channel_2` is evenly balanced, however `channel_1` is heavily weighted to the local balance side of the channel. 
