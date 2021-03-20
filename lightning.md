@@ -71,7 +71,7 @@ Identify the channel you want to rebalance.
 Loop Out allows a portion of the local balance of an active channel to be sent out from the channel, pushing that amount of satoshis to the remote side. However, instead of simply purchasing something to facilitate moving funds to the remote side of the channel, we are going to loop it back to an `on-chain` recieve address we control.
 
 
-Find the Channel ID of the channel you want to target for Loop Out
+Find the Channel ID of the channel you want to target for Loop Out.
 ```
 lncli listchannels
 ```
@@ -95,7 +95,7 @@ OPTIONS:
    --label value                 an optional label for this swap,limited to 500 characters. The label may not start with our reserved prefix: [reserved].
 ```
 
-Construct the Loop Out request
+Construct the Loop Out request.
 ```
 loop out --channel <chan_id> --conf_target <# of blocks> --max_swap_routing_fee <max fee amount> <loop out amount>
 ```
