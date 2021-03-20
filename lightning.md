@@ -116,7 +116,8 @@ We can confirm the loop request has been submitted by checking the `RTL` web das
 The loop out process will typically take about 30 minutes until you will see further progress from `loop monitor`. Once we see `LOOP_OUT PREIMAGE_REVEALED` in the `loop monitor` output, we will know the Loop Out attempt will succeed.
 
 [![https://i.imgur.com/ugwanXq.png](https://i.imgur.com/ugwanXq.png "https://i.imgur.com/ugwanXq.png")](https://i.imgur.com/ugwanXq.png "https://i.imgur.com/ugwanXq.png")
+[![https://i.imgur.com/T8lcNj7.png](https://i.imgur.com/T8lcNj7.png "https://i.imgur.com/T8lcNj7.png")](https://i.imgur.com/T8lcNj7.png "https://i.imgur.com/T8lcNj7.png")
 
-Channel rebalancing successful!
+### Channel rebalancing successful!
 
 [![https://i.imgur.com/dQPJmy7.png](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")
