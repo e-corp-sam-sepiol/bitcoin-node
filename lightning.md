@@ -1,4 +1,4 @@
-# Lightning Network 
+# Lightning Network (MyNode)
 
 #### [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
 
@@ -125,3 +125,90 @@ The loop out process will typically take about 30 minutes until you will see fur
 ### Channel rebalancing successful!
 
 [![https://i.imgur.com/dQPJmy7.png](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")
+
+# Balance of Satoshis
+#### [https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
+Tool for working with the balance of your satoshis on LND.
+
+### Installation
+```
+sudo npm install -g balanceofsatoshis
+```
+If you recieve an error message such as this:
+```
+npm WARN ws@7.4.4 requires a peer of bufferutil@^4.0.1 but none is installed. You must install peer dependencies yourself.
+npm WARN ws@7.4.4 requires a peer of utf-8-validate@^5.0.2 but none is installed. You must install peer dependencies yourself.
+```
+You can solve it by doing the following:
+```
+npm install --save-dev "bufferutil@^4.0.1"
+npm install --save-dev "utf-8-validate@^5.0.2"
+```
+`--save-dev` saves the dependency as a development dependency to your [package.json](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file#adding-dependencies-to-a-packagejson-file-from-the-command-line "package.json").
+
+```
+bos help
+```
+
+```
+   bos 8.0.2 
+
+   USAGE
+     bos <command> [options]
+
+   COMMANDS
+     accounting <category>               Get an accounting rundown                         
+     advertise                           Broadcast advertisement                           
+     balance                             Get total tokens                                  
+     broadcast <tx>                      Submit a signed transaction to the mempool        
+     cert-validity-days                  Number of days until the cert is invalid          
+     chain-deposit [amount]              Deposit coins in the on-chain wallet              
+     chain-receive [amount]              Receive funds on-chain via submarine swap         
+     chainfees                           Get the current chain fee estimates               
+     chart-fees-earned [via_peer]        Get a chart of earned routing fees                
+     chart-chain-fees                    Get a chart of chain fee expenses                 
+     chart-fees-paid                     Get a chart of paid routing fees                  
+     chart-payments-received             Get a chart of received payments                  
+     closed                              Get the status of a channel closings              
+     credentials                         Export local credentials                          
+     fanout <size> <count>               Fan out utxos                                     
+     fees                                Show and adjust outbound fee rates                
+     find <query>                        Find a record                                     
+     forwards                            Get forwards                                      
+     fund <address_amount...>            Make a signed transaction spending on-chain funds 
+     gateway                             Request gateway for https://ln-operator.github.io/
+     inbound-channel-rules               Enforce rules for inbound channels                
+     inbound-liquidity                   Get inbound liquidity size                        
+     increase-inbound-liquidity          Increase node inbound liquidity                   
+     increase-outbound-liquidity         Move on-chain funds off-chain                     
+     market [pair] [exchange]            Get the history of prices on a market             
+     nodes [node]                        List and edit saved nodes                         
+     open <peer_public_keys...>          Open channels using an external wallet for funding
+     open-balanced-channel               Open a dual-funded channel with a node            
+     outbound-liquidity                  Get outbound liquidity size                       
+     pay <request>                       Pay a payment request, probing first              
+     peers                               Get a list of channel-connected peers             
+     price [symbols...]                  Get the price                                     
+     probe <to> [amount]                 Check if a payment request is sendable            
+     purchase-ping <to>                  Request a ping payment response from a node       
+     rebalance                           Rebalance funds between peers                     
+     reconnect                           Reconnect to disconnected channel partners        
+     remove-peer [public_key]            Close out with a channel-connected peer           
+     report                              Report about the node                             
+     send <to>                           Send funds to a node                              
+     service-keysend-requests            Respond to keysend service requests               
+     swap-api-key                        Purchase a swap API key or inspect a swap API key 
+     tags [tag]                          View or adjust the set of tagged nodes            
+     telegram                            Post updates to a Telegram bot                    
+     unlock <path_to_password_file>      Unlock wallet if locked                           
+     utxos                               Get a list of utxos                               
+     help <command>                      Display help for a specific command               
+
+   GLOBAL OPTIONS
+     -h, --help         Display help                                      
+     -V, --version      Display version                                   
+     --no-color         Disable colors                                    
+     --quiet            Quiet mode - only displays warn and error messages
+     -v, --verbose      Verbose mode - will also output debug messages    
+
+```
