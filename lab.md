@@ -2,6 +2,11 @@
 
 The lightning network user documentation was created using the following software and configurations.
 
+- ### [Hardware / Software Stack](https://github.com/e-corp-sam-sepiol/lightning/blob/main/mynode.md "Hardware / Software Stack")
+myNode is a dedicated device that provides access to the Bitcoin and Lightning networks along with a number of other features! By using a dedicated device, like myNode, you get uptime, reliability, and ease-of-use that other software-only solutions cannot provide.
+
+ By running a Bitcoin and Lightning on your myNode device, you maintain all the security and advantages originally intended in the Bitcoin protocol. Information about your Bitcoin addresses and spending is verified by your local node and removes the need to trust online 3rd parties for getting information about your funds.
+
 -  ### [Oracle VirtualBox](https://www.virtualbox.org/ "Oracle VirtualBox")
 VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 
