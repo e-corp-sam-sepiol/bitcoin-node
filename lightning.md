@@ -17,7 +17,7 @@ When a new channel is opened, it is likely that the complete balance will remain
 
 Routing transactions for the lightning network will require fairly balanced channels on your node. This ensures throughput can be sent and recieved via all of the active channels.
 
-### Loop
+## Loop
 #### [https://github.com/lightninglabs/loop](https://github.com/lightninglabs/loop "https://github.com/lightninglabs/loop")
 Lightning Loop is a non-custodial service offered by [Lightning Labs](https://lightning.engineering/) to bridge on-chain and off-chain Bitcoin using submarine swaps. This repository is home to the Loop client and depends on the Lightning Network daemon [lnd](https://github.com/lightningnetwork/lnd). All of lnd’s supported chain backends are fully supported when using the Loop client: Neutrino, Bitcoin Core, and btcd.
 
@@ -36,6 +36,10 @@ In the current iteration of the Loop software, two swap types are supported:
 #### Why Loop In?
 - Refilling depleted channels with funds from cold-wallets or exchange withdrawals.
 - Servicing `off-chain` Lightning withdrawals using `on-chain` payments, with no funds in channels required.
+
+#### Considerations When Using Loop
+- Looping out from an active channel will require a path to the [LOOP public node](https://1ml.com/node/021c97a90a411ff2b10dc2a8e32de2f29d2fa49d41bfbb52bd416e460db0747d0d "LOOP public node"), if you want to be able to re-balance your channels with Loop make sure the channels you open have have a path to the LOOP public node.
+
 
 ### How to Loop Out
 
