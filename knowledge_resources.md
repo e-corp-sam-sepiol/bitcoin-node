@@ -1,8 +1,8 @@
-# Knowledge Resources 📚
+# 📚 Knowledge Resources 
 
 A collection of resources for general bitcoin related information to advanced bitcoin node operation and maintenance.
 
-## myNode 🔗
+## 🔗 myNode 
 
 #### mynodebtc.com - Features
 - [https://mynodebtc.com/features](https://mynodebtc.com/features "https://mynodebtc.com/features")
@@ -13,7 +13,7 @@ A collection of resources for general bitcoin related information to advanced bi
 #### mynodebtc.github.io - Getting Started
 - [https://mynodebtc.github.io/intro/getting-started.html](https://mynodebtc.github.io/intro/getting-started.html "https://mynodebtc.github.io/intro/getting-started.html")
 
-## Lightning Network 🌩️
+## 🌩️ Lightning Network 
 
 #### Mastering the Lightning Network
 - [Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)](https://github.com/lnbook/lnbook#mastering-the-lightning-network "Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)")
@@ -27,7 +27,7 @@ A collection of resources for general bitcoin related information to advanced bi
 #### A Closer Look at Submarine Swaps in the Lightning Network
 - [A Closer Look at Submarine Swaps in the Lightning Network](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/ "A Closer Look at Submarine Swaps in the Lightning Network")
 
-## Bitcoin ₿
+## ₿ Bitcoin 
 #### Bitcoin Security Guide
 - [bitcoinsecurity.guide](https://bitcoinsecurity.guide/ "bitcoinsecurity.guide")
 
