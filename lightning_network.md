@@ -1,5 +1,4 @@
-# Lightning Network ⚡
-
+# Lightning Network 🌩️
 #### [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
 
 The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trustedthird parties.
@@ -10,7 +9,7 @@ The Lightning Network does not require cooperation from the counterparty to exit
 
 By embedding the payment conditional upon knowledge of a secure cryptographic hash, payments can be made across a network of channels without the need for any party to have unilateral custodial ownership of funds. The Lightning Network enables what was previously not possible with trusted financial systems vulnerable to monopolies—without the need for custodial trust and ownership, participation on the network can be dynamic and open for all.
 
-# myNode 🖥️
+# myNode 🔗
 #### 1. [Create Lightning Wallet](https://mynodebtc.github.io/lightning/create.html "Create Lightning Wallet")
 #### 2. [Logging into Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Logging into Ride the Lightning")
 Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
@@ -224,7 +223,7 @@ bos help
 ```
 ------------
 
-### Payment Routing
+### Payment Routing 🧅
 [![Multi Hop Payment](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")
 #### [Routing vs. Path Finding](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-vs-path-finding "Routing vs. Path Finding")
 Path Finding, which is covered in [[path_finding]](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#path_finding "[path_finding]") is the process of finding and choosing a contiguous path made of payment channels which connects the sender `A` to the recipient `B`. The sender of a payment does the path finding, by examining the channel graph which they have assembled from channel announcements gossiped by other nodes.
