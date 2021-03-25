@@ -1,4 +1,4 @@
-# Lightning Network 🌩️
+# 🌩️ Lightning Network 
 #### [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
 
 The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trustedthird parties.
@@ -9,7 +9,9 @@ The Lightning Network does not require cooperation from the counterparty to exit
 
 By embedding the payment conditional upon knowledge of a secure cryptographic hash, payments can be made across a network of channels without the need for any party to have unilateral custodial ownership of funds. The Lightning Network enables what was previously not possible with trusted financial systems vulnerable to monopolies—without the need for custodial trust and ownership, participation on the network can be dynamic and open for all.
 
-# myNode 🔗
+------------
+
+# 🔗 myNode 
 #### 1. [Create Lightning Wallet](https://mynodebtc.github.io/lightning/create.html "Create Lightning Wallet")
 #### 2. [Logging into Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Logging into Ride the Lightning")
 Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
@@ -17,7 +19,9 @@ You can use RTL from any browser that is able to access your myNode installation
 #### 3. [Thunderhub](https://mynodebtc.github.io/lightning/thunderhub.html#introduction "Thunderhub")
 ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX.
 
-# Managing Channel Balances ⚖️
+------------
+
+# ⚖️ Managing Channel Balances 
 [![channel_1](https://i.imgur.com/HQI3THY.png "channel_1")](https://i.imgur.com/HQI3THY.png "channel_1")
 
 When a new channel is opened, it is likely that the complete balance will remain on the local side of the channel. This means that we can send satoshis, but cannot recieve any satoshis to `channel_1`.
@@ -49,6 +53,7 @@ In the current iteration of the Loop software, two swap types are supported:
 #### Considerations When Using Loop
 - Looping out from an active channel will require a path to the [LOOP public node](https://1ml.com/node/021c97a90a411ff2b10dc2a8e32de2f29d2fa49d41bfbb52bd416e460db0747d0d "LOOP public node"), if you want to be able to re-balance your channels with Loop make sure the channels you open have have a path to the LOOP public node.
 
+------------
 
 ### How to Loop Out
 
@@ -131,11 +136,13 @@ The loop out process will typically take about 30 minutes until you will see fur
 [![https://i.imgur.com/ugwanXq.png](https://i.imgur.com/ugwanXq.png "https://i.imgur.com/ugwanXq.png")](https://i.imgur.com/ugwanXq.png "https://i.imgur.com/ugwanXq.png")
 [![https://i.imgur.com/T8lcNj7.png](https://i.imgur.com/T8lcNj7.png "https://i.imgur.com/T8lcNj7.png")](https://i.imgur.com/T8lcNj7.png "https://i.imgur.com/T8lcNj7.png")
 
-### Channel rebalancing successful!
+#### 🎉 Channel rebalancing successful! 
 
 [![https://i.imgur.com/dQPJmy7.png](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")
 
-## Balance of Satoshis
+------------
+
+## 🔑 Balance of Satoshis
 #### [https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
 Tool for working with the balance of your satoshis on LND.
 
@@ -155,6 +162,7 @@ npm install --save-dev "utf-8-validate@^5.0.2"
 ```
 `--save-dev` saves the dependency as a development dependency to your [package.json](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file#adding-dependencies-to-a-packagejson-file-from-the-command-line "package.json").
 
+### Help File
 ```
 bos help
 ```
@@ -223,7 +231,7 @@ bos help
 ```
 ------------
 
-## Payment Routing 🧅
+## 🧅 Payment Routing (Onion Routing)
 [![Multi Hop Payment](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")
 #### [Routing vs. Path Finding](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-vs-path-finding "Routing vs. Path Finding")
 Path Finding, which is covered in [[path_finding]](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#path_finding "[path_finding]") is the process of finding and choosing a contiguous path made of payment channels which connects the sender `A` to the recipient `B`. The sender of a payment does the path finding, by examining the channel graph which they have assembled from channel announcements gossiped by other nodes.
@@ -233,6 +241,8 @@ Routing refers to the series of interactions across the network that allow a pay
 An important rule of thumb is that it is possible for a path to exist between `Alice` and `Bob`, yet there may not be an active route on which to send the payment.
 
 - [Exploring Lightning Network Routing](https://blog.lightning.engineering/posts/2018/05/30/routing.html "Exploring Lightning Network Routing")
+
+Due to the use of [onion routing](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-a-payment "onion routing"), intermediary nodes are only explicitly aware of the one node preceding them and the one node following them in the route. They will not necessarily know who is the sender and recipient of the payment. This enables fans to use intermediary nodes to pay Dina, without leaking private information and without risking theft.
 
 ------------
 
@@ -267,6 +277,7 @@ My bitcoin node currently has three active channels with other lightning nodes o
 
 ------------
 
+### BOS Probe
 Let's `probe` a payment route to [Bitrefill.com](http://bitrefill.com "Bitrefill.com")'s lightning node:
 - [Public Key: 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f](https://1ml.com/node/030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f "Public Key: 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f")
 
@@ -290,3 +301,5 @@ Let's see if I can find three different payment routes to Bitrefill.com:
 bos probe 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f --find-max --max-paths 3
 ```
 [![payment routing](https://i.imgur.com/gsgqaHJ.png "payment routing")](https://i.imgur.com/gsgqaHJ.png "payment routing")
+
+------------
