@@ -10,6 +10,14 @@ The Lightning Network does not require cooperation from the counterparty to exit
 
 By embedding the payment conditional upon knowledge of a secure cryptographic hash, payments can be made across a network of channels without the need for any party to have unilateral custodial ownership of funds. The Lightning Network enables what was previously not possible with trusted financial systems vulnerable to monopolies—without the need for custodial trust and ownership, participation on the network can be dynamic and open for all.
 
+# myNode
+#### 1. [Create Lightning Wallet](https://mynodebtc.github.io/lightning/create.html "Create Lightning Wallet")
+#### 2. [Logging into Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Logging into Ride the Lightning")
+Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
+You can use RTL from any browser that is able to access your myNode installation.
+#### 3. [Thunderhub](https://mynodebtc.github.io/lightning/thunderhub.html#introduction "Thunderhub")
+ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX.
+
 # Managing Channel Balances
 [![channel_1](https://i.imgur.com/HQI3THY.png "channel_1")](https://i.imgur.com/HQI3THY.png "channel_1")
 
@@ -17,9 +25,11 @@ When a new channel is opened, it is likely that the complete balance will remain
 
 Routing transactions for the lightning network will require fairly balanced channels on your node. This ensures throughput can be sent and recieved via all of the active channels.
 
-## Loop
+## Loop (Submarine Swaps)
 #### [https://github.com/lightninglabs/loop](https://github.com/lightninglabs/loop "https://github.com/lightninglabs/loop")
-Lightning Loop is a non-custodial service offered by [Lightning Labs](https://lightning.engineering/) to bridge on-chain and off-chain Bitcoin using submarine swaps. This repository is home to the Loop client and depends on the Lightning Network daemon [lnd](https://github.com/lightningnetwork/lnd). All of lnd’s supported chain backends are fully supported when using the Loop client: Neutrino, Bitcoin Core, and btcd.
+Lightning Loop is a non-custodial service offered by [Lightning Labs](https://lightning.engineering/) to bridge on-chain and off-chain Bitcoin using submarine swaps. This repository is home to the Loop client and depends on the Lightning Network daemon [lnd](https://github.com/lightningnetwork/lnd). All of LNDs supported chain backends are fully supported when using the Loop client: Neutrino, Bitcoin Core, and btcd.
+
+-  [A Closer Look at Submarine Swaps in the Lightning Network](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/ "A Closer Look at Submarine Swaps in the Lightning Network")
 
 In the current iteration of the Loop software, two swap types are supported:
 ### Loop Out
@@ -113,7 +123,7 @@ loop out --channel <chan_id> --conf_target 100 --max_swap_routing_fee 1000 36851
 [![https://i.imgur.com/fcEHgmR.png](https://i.imgur.com/fcEHgmR.png "https://i.imgur.com/fcEHgmR.png")](https://i.imgur.com/fcEHgmR.png "https://i.imgur.com/fcEHgmR.png")
 [![https://i.imgur.com/MHpzEVk.png](https://i.imgur.com/MHpzEVk.png "https://i.imgur.com/MHpzEVk.png")](https://i.imgur.com/MHpzEVk.png "https://i.imgur.com/MHpzEVk.png")
 
-We can confirm the loop request has been submitted by checking the `RTL` web dashboard, under Lightning > Peers/Channels > Active HTLCs. There are active HTLCs in `RTL`, this confirms our loop out request has been sent.
+We can confirm the loop request has been submitted by checking the `RTL` web dashboard, under `Lightning > Peers/Channels > Active HTLCs`. There are active HTLCs in `RTL`, this confirms our loop out request has been sent.
 
 [![https://i.imgur.com/6butY5F.png](https://i.imgur.com/6butY5F.png "https://i.imgur.com/6butY5F.png")](https://i.imgur.com/6butY5F.png "https://i.imgur.com/6butY5F.png")
 
@@ -212,3 +222,72 @@ bos help
      -v, --verbose      Verbose mode - will also output debug messages    
 
 ```
+------------
+
+### Payment Routing
+[![Multi Hop Payment](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")
+#### [Routing vs. Path Finding](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-vs-path-finding "Routing vs. Path Finding")
+Path Finding, which is covered in [[path_finding]](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#path_finding "[path_finding]") is the process of finding and choosing a contiguous path made of payment channels which connects the sender `A` to the recipient `B`. The sender of a payment does the path finding, by examining the channel graph which they have assembled from channel announcements gossiped by other nodes.
+
+Routing refers to the series of interactions across the network that allow a payment to flow from A to B, across the path previously selected by path finding. Routing is the active process of sending a payment on a path, which involves the cooperation of all the intermediary nodes along that path.
+
+An important rule of thumb is that it is possible for a path to exist between `Alice` and `Bob`, yet there may not be an active route on which to send the payment.
+
+- [Exploring Lightning Network Routing](https://blog.lightning.engineering/posts/2018/05/30/routing.html "Exploring Lightning Network Routing")
+
+------------
+
+[Balance of Satoshis](https://github.com/alexbosworth/balanceofsatoshis "Balance of Satoshis"), written by Alex Bosworth, can help us simulate lightning network payments without actually paying anything. This can help us probe the network, and acquire information regarding our capability of routing payments.
+
+```
+bos help probe
+```
+```
+   bos 8.0.2 
+   USAGE
+     bos probe <to> [amount]
+     Simulate paying a payment request without actually paying it
+
+   ARGUMENTS
+     <to>          Payment request or node public key            required      
+     [amount]      Amount to probe, default: request amount      optional      
+
+   OPTIONS
+     --avoid <pubkey>        Avoid forwarding through node                           optional                    
+     --find-max              Find the maximum routeable amount on success route      optional      default: false
+     --in <public_key>       Route through specific peer of destination              optional                    
+     --max-paths <max>       Maximum paths to use for find-max                       optional      default: 1    
+     --no-color              Mute all colors                                         optional      default: false
+     --node <node_name>      Node to use for payment request check                   optional                    
+     --out <public_key>      Make first hop through peer                             optional                    
+```
+
+[1ml.com](https://1ml.com/ "1ml.com") is a Lightning Network search and analysis engine, which provides useful network metrics associated with nodes that can help inform our decisions to open channel(s) with one node vs another node. We can use [1ml.com](https://1ml.com/ "1ml.com") to find the `public id` of lightning network nodes when learning how to use the `bos` command `probe`.
+
+My bitcoin node currently has three active channels with other lightning nodes on the network. When I use the `probe` command, the process will run by using one of the three channels I have open, as these channels are my payment gateway to the rest of the lightning network.
+
+------------
+
+Let's `probe` a payment route to [Bitrefill.com](http://bitrefill.com "Bitrefill.com")'s lightning node:
+- [Public Key: 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f](https://1ml.com/node/030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f "Public Key: 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f")
+
+```
+bos probe <public id of node we want to route to> --find-max
+```
+
+`--find-max` Find the maximum routeable amount on success route.
+
+```
+bos probe 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f --find-max
+```
+[![bos probe](https://i.imgur.com/VkVB2m9.png "bos probe")](https://i.imgur.com/VkVB2m9.png "bos probe")
+
+The maximum payment I can route on the lightning network to Bitrefill.com's node is `0.01230734` or `1,230,734` satoshis. The payment would be routed through `LightningTo.Me`.
+
+`--max-paths` can help us `probe` multiple paths to the same payment destination.
+
+Let's see if I can find three different payment routes to Bitrefill.com:
+```
+bos probe 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f --find-max --max-paths 3
+```
+[![payment routing](https://i.imgur.com/gsgqaHJ.png "payment routing")](https://i.imgur.com/gsgqaHJ.png "payment routing")
