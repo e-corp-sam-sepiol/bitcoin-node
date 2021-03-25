@@ -1,4 +1,4 @@
-# Resources
+# Knowledge Resources
 
 A collection of resources for advanced bitcoin node operation and maintenance.
 
