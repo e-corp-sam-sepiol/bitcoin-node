@@ -13,7 +13,7 @@ A collection of resources for general bitcoin related information to advanced bi
 #### 📌 mynodebtc.github.io - Getting Started
 - [https://mynodebtc.github.io/intro/getting-started.html](https://mynodebtc.github.io/intro/getting-started.html "https://mynodebtc.github.io/intro/getting-started.html")
 
-#### Ministry of Nodes - Video Series
+#### 🎞️ Ministry of Nodes - Video Series
 - [02 - myNode series - Which node to run and Introduction to myNodeBTC](https://www.youtube.com/watch?v=gvkNtQoNh2U&list=PLCRbH-IWlcW0KP8DxyWWrqahGafZyV2HR&index=2 "02 - myNode series - Which node to run and Introduction to myNodeBTC")
 
 ## 🌩️ Lightning Network 
@@ -40,7 +40,7 @@ A collection of resources for general bitcoin related information to advanced bi
 #### 📌 Bitcoin Backups
 - [Bitcoin Backups](https://bitcoin-intro.com/en/backup "Bitcoin Backups")
 
-#### Mastering Bitcoin
+#### 📖 Mastering Bitcoin
 - [Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)](https://github.com/bitcoinbook/bitcoinbook#mastering-bitcoin "Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)")
 
 #### Bitcoin Information & Resources - Jameson Lopp (lopp.net)
