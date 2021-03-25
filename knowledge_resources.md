@@ -31,6 +31,9 @@ A collection of resources for general bitcoin related information to advanced bi
 #### Bitcoin Security Guide
 - [bitcoinsecurity.guide](https://bitcoinsecurity.guide/ "bitcoinsecurity.guide")
 
+#### Bitcoin Privacy Guide
+- [Bitcoin Privacy Guide](https://bitcoiner.guide/privacy/ "bitcoin privacy guide")
+
 #### Bitcoin Backups
 - [Bitcoin Backups](https://bitcoin-intro.com/en/backup "Bitcoin Backups")
 
