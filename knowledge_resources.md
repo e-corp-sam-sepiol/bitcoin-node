@@ -31,6 +31,9 @@ A collection of resources for general bitcoin related information to advanced bi
 #### Bitcoin Security Guide
 - [bitcoinsecurity.guide](https://bitcoinsecurity.guide/ "bitcoinsecurity.guide")
 
+#### Bitcoin Backups
+- [Bitcoin Backups](https://bitcoin-intro.com/en/backup "Bitcoin Backups")
+
 #### Mastering Bitcoin
 - [Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)](https://github.com/bitcoinbook/bitcoinbook#mastering-bitcoin "Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)")
 
