@@ -28,6 +28,9 @@ A collection of resources for general bitcoin related information to advanced bi
 - [A Closer Look at Submarine Swaps in the Lightning Network](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/ "A Closer Look at Submarine Swaps in the Lightning Network")
 
 ## Bitcoin ₿
+#### Bitcoin Security Guide
+- [bitcoinsecurity.guide](https://bitcoinsecurity.guide/ "bitcoinsecurity.guide")
+
 #### Mastering Bitcoin
 - [Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)](https://github.com/bitcoinbook/bitcoinbook#mastering-bitcoin "Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)")
 
