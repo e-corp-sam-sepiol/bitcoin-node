@@ -1,8 +1,8 @@
-# Knowledge Resources
+# Knowledge Resources 📚
 
 A collection of resources for advanced bitcoin node operation and maintenance.
 
-## myNode
+## myNode 🔗
 
 #### mynodebtc.com - Features
 - [https://mynodebtc.com/features](https://mynodebtc.com/features "https://mynodebtc.com/features")
@@ -13,7 +13,7 @@ A collection of resources for advanced bitcoin node operation and maintenance.
 #### mynodebtc.github.io - Getting Started
 - [https://mynodebtc.github.io/intro/getting-started.html](https://mynodebtc.github.io/intro/getting-started.html "https://mynodebtc.github.io/intro/getting-started.html")
 
-## Lightning Network
+## Lightning Network 🌩️
 
 #### Mastering the Lightning Network
 - [Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)](https://github.com/lnbook/lnbook#mastering-the-lightning-network "Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)")
