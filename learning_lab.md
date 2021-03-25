@@ -1,4 +1,4 @@
-# Lab Setup
+# Learning Lab Setup
 
 The lightning network user documentation was created using the following software and configurations.
 
@@ -32,7 +32,7 @@ sudo apt update ; sudo apt upgrade -y
 sudo apt update ; sudo apt install terminator -y
 ```
 
-Terminator allows us to multiplex our terminal session, so we can easily control multiple sessions.
+Terminator allows us to multiplex our terminal session, so we can easily control multiple sessions. You can `exit` a multiplexed session by issuing the `exit` command.
 [![Terminator](https://i.imgur.com/Ml4Jimp.png "Terminator")](https://i.imgur.com/Ml4Jimp.png "Terminator")
 
 Split Terminal Window Vertically | `CTRL` + `SHIFT` + `E`
