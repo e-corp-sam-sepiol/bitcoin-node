@@ -16,12 +16,15 @@ By running a Bitcoin and Lightning on your myNode device, you maintain all the s
 | Electrum Server - BTC Light Wallet Server  |
 | Samourai Dojo - Samourai Wallet Server |
 | Samourai Whirlpool - Coinjoin |
+| Joininbox - JoinMarket Mixing |
 | Tor - Bitcoin and Lightning |
 | Tor - Remote Access |
 | VPN - Remote Access |
 | Ride the Lightning - Lightning Node Interface |
 | Thunderhub - Lightning Node Interface  |
 | Specter Wallet |
+| Sphinx Chat Node |
+| BTC Pay Server |
 | Bitcoin Blockchain Explorer |
 | Simple UI / Web Interface |
 | Quick Sync - Torrented Blockchain Bootstrapping |
