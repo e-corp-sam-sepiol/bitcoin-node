@@ -135,7 +135,7 @@ The loop out process will typically take about 30 minutes until you will see fur
 
 [![https://i.imgur.com/dQPJmy7.png](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")
 
-# Balance of Satoshis
+## Balance of Satoshis
 #### [https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
 Tool for working with the balance of your satoshis on LND.
 
