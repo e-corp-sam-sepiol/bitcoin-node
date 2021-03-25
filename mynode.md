@@ -88,3 +88,5 @@ Operational costs will include electricity expenses.
 | [Center Punch](https://store.coinkite.com/store/coldcard "Center Punch") |
 
 ### 📌 [Bitcoin Security Guide](https://bitcoinsecurity.guide/ "Bitcoin Security Guide")
+
+----------
