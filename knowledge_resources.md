@@ -1,6 +1,6 @@
 # Knowledge Resources 📚
 
-A collection of resources for advanced bitcoin node operation and maintenance.
+A collection of resources for general bitcoin related information to advanced bitcoin node operation and maintenance.
 
 ## myNode 🔗
 
@@ -26,3 +26,13 @@ A collection of resources for advanced bitcoin node operation and maintenance.
 
 #### A Closer Look at Submarine Swaps in the Lightning Network
 - [A Closer Look at Submarine Swaps in the Lightning Network](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/ "A Closer Look at Submarine Swaps in the Lightning Network")
+
+## Bitcoin ₿
+#### Mastering Bitcoin
+- [Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)](https://github.com/bitcoinbook/bitcoinbook#mastering-bitcoin "Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)")
+
+#### Satoshi Nakamoto Institute
+- [Satoshi Nakamoto Institute](https://nakamotoinstitute.org/ "Satoshi Nakamoto Institute")
+
+#### Bitcoin Information & Resources - Jameson Lopp (lopp.net)
+- [Bitcoin Information & Resources](https://www.lopp.net/bitcoin-information.html "Bitcoin Information & Resources")
