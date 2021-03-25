@@ -77,7 +77,7 @@ Operational costs will include electricity expenses.
 [![myNode](https://i.imgur.com/fNakm6X.png "myNode")](https://i.imgur.com/fNakm6X.png "myNode")
 
 ------------
-## ⚙️ Hardware Wallet
+## 🎲 Hardware Wallet
 [![coldcard](https://bitcoinsecurity.guide/coldcard-seedplate-microsd.jpg "coldcard")](https://bitcoinsecurity.guide/coldcard-seedplate-microsd.jpg "coldcard")
 
 | COLDCARD Mk3 - Hardware Wallet & Accessories  |
@@ -87,4 +87,4 @@ Operational costs will include electricity expenses.
 | [SEEDPLATE Backup](https://store.coinkite.com/store/coldcard "SEEDPLATE Backup") |
 | [Center Punch](https://store.coinkite.com/store/coldcard "Center Punch") |
 
-### [Bitcoin Security Guide](https://bitcoinsecurity.guide/ "Bitcoin Security Guide")
+### 📌 [Bitcoin Security Guide](https://bitcoinsecurity.guide/ "Bitcoin Security Guide")
