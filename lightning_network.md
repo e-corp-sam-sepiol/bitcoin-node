@@ -223,7 +223,7 @@ bos help
 ```
 ------------
 
-### Payment Routing 🧅
+## Payment Routing 🧅
 [![Multi Hop Payment](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")
 #### [Routing vs. Path Finding](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-vs-path-finding "Routing vs. Path Finding")
 Path Finding, which is covered in [[path_finding]](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#path_finding "[path_finding]") is the process of finding and choosing a contiguous path made of payment channels which connects the sender `A` to the recipient `B`. The sender of a payment does the path finding, by examining the channel graph which they have assembled from channel announcements gossiped by other nodes.
