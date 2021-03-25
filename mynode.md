@@ -91,4 +91,4 @@ Operational costs will include electricity expenses.
 
 ------------
 
-### [Back to Read Me](https://github.com/e-corp-sam-sepiol/bitcoin-node/blob/main/README.md "readme")
+### 🔙 [Back to Read Me](https://github.com/e-corp-sam-sepiol/bitcoin-node/blob/main/README.md "readme")
