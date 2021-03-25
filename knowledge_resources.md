@@ -13,6 +13,9 @@ A collection of resources for general bitcoin related information to advanced bi
 #### mynodebtc.github.io - Getting Started
 - [https://mynodebtc.github.io/intro/getting-started.html](https://mynodebtc.github.io/intro/getting-started.html "https://mynodebtc.github.io/intro/getting-started.html")
 
+#### Ministry of Nodes - Video Series
+- [02 - myNode series - Which node to run and Introduction to myNodeBTC](https://www.youtube.com/watch?v=gvkNtQoNh2U&list=PLCRbH-IWlcW0KP8DxyWWrqahGafZyV2HR&index=2 "02 - myNode series - Which node to run and Introduction to myNodeBTC")
+
 ## 🌩️ Lightning Network 
 
 #### Mastering the Lightning Network
