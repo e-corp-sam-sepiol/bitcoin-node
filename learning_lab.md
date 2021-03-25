@@ -1,6 +1,6 @@
 # Learning Lab Setup 🧪
 
-The lightning network user documentation was created using the following software and configurations.
+The related user documentation was created using the following software and configurations.
 
 - ### [Hardware / Software Stack](https://github.com/e-corp-sam-sepiol/lightning/blob/main/mynode.md "Hardware / Software Stack")
 myNode is a dedicated device that provides access to the Bitcoin and Lightning networks along with a number of other features! By using a dedicated device, like myNode, you get uptime, reliability, and ease-of-use that other software-only solutions cannot provide.
