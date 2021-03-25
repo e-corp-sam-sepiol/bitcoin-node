@@ -10,7 +10,7 @@ A collection of resources for general bitcoin related information to advanced bi
 #### myNodebtc.com - Guides
 - [https://mynodebtc.com/guides](https://mynodebtc.com/guides "https://mynodebtc.com/guides")
 
-#### mynodebtc.github.io - Getting Started
+#### 📌 mynodebtc.github.io - Getting Started
 - [https://mynodebtc.github.io/intro/getting-started.html](https://mynodebtc.github.io/intro/getting-started.html "https://mynodebtc.github.io/intro/getting-started.html")
 
 #### Ministry of Nodes - Video Series
@@ -31,13 +31,13 @@ A collection of resources for general bitcoin related information to advanced bi
 - [A Closer Look at Submarine Swaps in the Lightning Network](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/ "A Closer Look at Submarine Swaps in the Lightning Network")
 
 ## ₿ Bitcoin 
-#### Bitcoin Security Guide
+#### 📌 Bitcoin Security Guide
 - [bitcoinsecurity.guide](https://bitcoinsecurity.guide/ "bitcoinsecurity.guide")
 
-#### Bitcoin Privacy Guide
+#### 📌 Bitcoin Privacy Guide
 - [Bitcoin Privacy Guide](https://bitcoiner.guide/privacy/ "bitcoin privacy guide")
 
-#### Bitcoin Backups
+#### 📌 Bitcoin Backups
 - [Bitcoin Backups](https://bitcoin-intro.com/en/backup "Bitcoin Backups")
 
 #### Mastering Bitcoin
