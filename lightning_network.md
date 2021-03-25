@@ -1,4 +1,4 @@
-# Lightning Network
+# Lightning Network ⚡
 
 #### [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
 
