@@ -1,7 +1,7 @@
 # 🔗 myNode 
 ### [https://www.mynodebtc.com/](https://www.mynodebtc.com/ "https://www.mynodebtc.com/")
 
-myNode aims to be the easiest way to run a dedicated, easy to use, Bitcoin Node and Lightning Wallet! By combining the best open source software with our UI, management, and monitoring software, you can easily, safely, and securely use Bitcoin and Lightning.
+myNode aims to be the easiest way to run a dedicated, easy to use, Bitcoin Node and Lightning Wallet. By combining the best open source software with a user friendly UI, management, and monitoring software, you can easily, safely, and securely use Bitcoin and Lightning.
 
 myNode is a dedicated device that provides access to the Bitcoin and Lightning networks along with a number of other features! By using a dedicated device, like myNode, you get uptime, reliability, and ease-of-use that other software-only solutions cannot provide.
 
