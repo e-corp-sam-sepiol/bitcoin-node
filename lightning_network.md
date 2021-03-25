@@ -17,7 +17,7 @@ You can use RTL from any browser that is able to access your myNode installation
 #### 3. [Thunderhub](https://mynodebtc.github.io/lightning/thunderhub.html#introduction "Thunderhub")
 ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX.
 
-# Managing Channel Balances 🧮
+# Managing Channel Balances ⚖️
 [![channel_1](https://i.imgur.com/HQI3THY.png "channel_1")](https://i.imgur.com/HQI3THY.png "channel_1")
 
 When a new channel is opened, it is likely that the complete balance will remain on the local side of the channel. This means that we can send satoshis, but cannot recieve any satoshis to `channel_1`.
