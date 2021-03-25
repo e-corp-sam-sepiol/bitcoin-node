@@ -18,7 +18,7 @@ A collection of resources for general bitcoin related information to advanced bi
 
 ## 🌩️ Lightning Network 
 
-#### 📌 Mastering the Lightning Network
+#### 📌 📖 Mastering the Lightning Network
 - [Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)](https://github.com/lnbook/lnbook#mastering-the-lightning-network "Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)")
 
 #### The Inbound Capacity Problem in the Lightning Network
