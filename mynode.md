@@ -7,7 +7,9 @@ myNode is a dedicated device that provides access to the Bitcoin and Lightning n
 
 By running a Bitcoin and Lightning on your myNode device, you maintain all the security and advantages originally intended in the Bitcoin protocol. Information about your Bitcoin addresses and spending is verified by your local node and removes the need to trust online 3rd parties for getting information about your funds.
 
-## Hardware
+------------
+
+## 🔧 Bitcoin Node Hardware
 
 - [CanaKit Raspberry Pi 4 8GB Starter Kit - 8GB RAM](https://www.amazon.com/gp/product/B08956GVXN/ "CanaKit Raspberry Pi 4 8GB Starter Kit - 8GB RAM")
 - [Argon ONE V2 Raspberry Pi 4 Case with Cooling Fan and Power Button](https://www.amazon.com/gp/product/B07WP8WC3V/ "Argon ONE V2 Raspberry Pi 4 Case with Cooling Fan and Power Button")
@@ -21,7 +23,16 @@ By running a Bitcoin and Lightning on your myNode device, you maintain all the s
 [![SSD](https://images-na.ssl-images-amazon.com/images/I/71EkqZBJHwL._AC_SL1500_.jpg "SSD")](https://images-na.ssl-images-amazon.com/images/I/71EkqZBJHwL._AC_SL1500_.jpg "SSD")
 [![USB 3](https://images-na.ssl-images-amazon.com/images/I/61lIcGnUj8L._AC_SL1200_.jpg "USB 3")](https://images-na.ssl-images-amazon.com/images/I/61lIcGnUj8L._AC_SL1200_.jpg "USB 3")
 
+------------
 
 ## [Getting Started with myNode](https://www.mynodebtc.com/guide/getting_started "Getting Started with myNode")
 
 [![myNode](https://i.imgur.com/fNakm6X.png "myNode")](https://i.imgur.com/fNakm6X.png "myNode")
+
+------------
+## ⚙️ Hardware Wallet
+[![coldcard](https://bitcoinsecurity.guide/coldcard-seedplate-microsd.jpg "coldcard")](https://bitcoinsecurity.guide/coldcard-seedplate-microsd.jpg "coldcard")
+- [COLDCARD Mk3 - Experiment Bundle](https://store.coinkite.com/store/coldcard "COLDCARD Mk3")
+- [Power-Only USB Cable](https://store.coinkite.com/store/coldcard "Power-Only USB Cable")
+- [SEEDPLATE Backup](https://store.coinkite.com/store/coldcard "SEEDPLATE Backup")
+- [Center Punch](https://store.coinkite.com/store/coldcard "Center Punch")
