@@ -27,6 +27,9 @@ Xubuntu provides a configurable, user friendly, minimal desktop GUI, and stabili
 ```
 sudo apt update ; sudo apt upgrade -y
 ```
+
+------------
+
 ### Terminator
 ```
 sudo apt update ; sudo apt install terminator -y
@@ -42,3 +45,11 @@ Split Terminal Window Horizontally | `CTRL` + `SHIFT` + `O`
 [![Terminator Multiplex](https://i.imgur.com/csF9M5z.png "Terminator Multiplex")](https://i.imgur.com/csF9M5z.png "Terminator Multiplex")
 
 [![Terminator Multiplex](https://i.imgur.com/ubV47oD.png "Terminator Multiplex")](https://i.imgur.com/ubV47oD.png "Terminator Multiplex")
+
+------------
+
+### SSH - Logging into your myNode (CLI)
+Use `SSH` to login to your myNode via `Terminator`.
+```
+ssh mynode.local -l admin
+```
