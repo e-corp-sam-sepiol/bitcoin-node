@@ -18,7 +18,7 @@ A collection of resources for general bitcoin related information to advanced bi
 
 ## 🌩️ Lightning Network 
 
-#### Mastering the Lightning Network
+#### 📌 Mastering the Lightning Network
 - [Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)](https://github.com/lnbook/lnbook#mastering-the-lightning-network "Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)")
 
 #### The Inbound Capacity Problem in the Lightning Network
@@ -27,7 +27,7 @@ A collection of resources for general bitcoin related information to advanced bi
 #### Rebalancing: The Key to the Lightning Network
 - [Rebalancing: The Key to the Lightning Network](https://blog.muun.com/rebalancing-in-the-lightning-network/ "Rebalancing: The Key to the Lightning Network")
 
-#### A Closer Look at Submarine Swaps in the Lightning Network
+#### 📌 A Closer Look at Submarine Swaps in the Lightning Network
 - [A Closer Look at Submarine Swaps in the Lightning Network](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/ "A Closer Look at Submarine Swaps in the Lightning Network")
 
 ## ₿ Bitcoin 
