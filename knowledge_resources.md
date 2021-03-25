@@ -31,20 +31,8 @@ A collection of resources for general bitcoin related information to advanced bi
 #### Mastering Bitcoin
 - [Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)](https://github.com/bitcoinbook/bitcoinbook#mastering-bitcoin "Mastering Bitcoin - Andreas M. Antonopoulos (@aantonop)")
 
-#### Satoshi Nakamoto Institute
-- [Satoshi Nakamoto Institute](https://nakamotoinstitute.org/ "Satoshi Nakamoto Institute")
-
 #### Bitcoin Information & Resources - Jameson Lopp (lopp.net)
 - [Bitcoin Information & Resources](https://www.lopp.net/bitcoin-information.html "Bitcoin Information & Resources")
 
 #### Bitcoin Memory Pool - Network Fees
 - [mempool.space](https://mempool.space/ "mempool.space")
-
-#### Bitcoin Memory Pool - Network Fees
-- [jochen-hoenicke.de](https://jochen-hoenicke.de/queue/#BTC,2w,weight "jochen-hoenicke.de")
-
-#### Bitbo.io - Bitcoin Price Dashboard
-- [bitbo.io](https://bitbo.io/ "bitbo.io")
-
-#### Satoshis Per Person - Global Population / 21 Million
-- [Satoshis Per Person](https://satoshisperperson.com/ "Satoshis Per Person")
