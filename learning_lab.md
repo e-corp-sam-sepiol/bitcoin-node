@@ -53,3 +53,7 @@ Use `SSH` to login to your myNode via `Terminator`.
 ```
 ssh mynode.local -l admin
 ```
+
+------------
+
+### 🔙 [Back to Read Me](https://github.com/e-corp-sam-sepiol/bitcoin-node/blob/main/README.md "readme")
