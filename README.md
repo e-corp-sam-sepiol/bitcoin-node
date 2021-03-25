@@ -1,4 +1,4 @@
-# Bitcoin & Lightning Node Operations Documentation
+# 📙 Bitcoin & Lightning Node Operations Documentation
 
 A collection of resources and documentation for the operation of a bitcoin node. 
 
