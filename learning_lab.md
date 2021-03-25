@@ -1,4 +1,4 @@
-# Learning Lab Setup 🧪
+# 🧪 Learning Lab Setup 
 
 The related user documentation was created using the following software and configurations.
 
