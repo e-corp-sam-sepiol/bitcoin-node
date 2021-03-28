@@ -86,6 +86,7 @@ Operational costs will include electricity expenses.
 | [Power-Only USB Cable](https://store.coinkite.com/store/coldcard "Power-Only USB Cable") |
 | [SEEDPLATE Backup](https://store.coinkite.com/store/coldcard "SEEDPLATE Backup") |
 | [Center Punch](https://store.coinkite.com/store/coldcard "Center Punch") |
+| [Billfodl](https://privacypros.io/products/the-billfodl/ "Metal Seed Backup") |
 
 ### 📌 [Bitcoin Security Guide](https://bitcoinsecurity.guide/ "Bitcoin Security Guide")
 
