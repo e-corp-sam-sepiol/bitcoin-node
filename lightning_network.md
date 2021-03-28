@@ -1,7 +1,7 @@
 # 🌩️ Lightning Network 
 #### [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
 
-The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trustedthird parties.
+The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trusted third parties.
 
 Funds are placed into a two-party, multisignature "channel" bitcoin address. This channel is represented as an entry on the bitcoin public ledger. In order to spend funds from the channel, both parties must agree on the new balance. The current balance is stored as the most recent transaction signed by both parties, spending from the channel address. To make a payment, both parties sign a new exit transaction spending from the channel address. All old exit transactions are invalidated by doing so. 
 
