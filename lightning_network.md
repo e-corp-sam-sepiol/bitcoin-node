@@ -11,13 +11,94 @@ By embedding the payment conditional upon knowledge of a secure cryptographic ha
 
 ------------
 
-# 🔗 myNode 
+# 🔗 myNode - Getting Started With The Lightning Network
 #### 1. [Create Lightning Wallet](https://mynodebtc.github.io/lightning/create.html "Create Lightning Wallet")
-#### 2. [Logging into Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Logging into Ride the Lightning")
+Create a lightning wallet and initalize the 	`lnd` daemon, syncing your node to the lightning network.
+#### 2. [Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Ride the Lightning")
 Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
-You can use RTL from any browser that is able to access your myNode installation.
+You can use RTL from any browser that is able to access your myNode installation. Useful for graphical management and monitoring of your lightning node.
 #### 3. [Thunderhub](https://mynodebtc.github.io/lightning/thunderhub.html#introduction "Thunderhub")
-ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX.
+ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX. Useful for graphical management and monitoring of your lightning node.
+
+------------
+
+# Lightning Node Management - Overview
+
+### Peers & Channels
+- Peers are Lightning nodes which are connected to each other over the internet (TCP/IP).
+- Channel(s) are a payment channel, established between two peers on the Lightning Network.
+
+### Receiving Payments
+Receiving incoming lightning payments on your node requires the following:
+
+- An active channel with a well connected node on the Lightning Network. 
+- Inbound Liquidity, i.e active channel(s) that have a remote balance. This means that there needs to be satoshis on the remote side of an open channel. The size of the remote balance affects the size of lightning payments your node can recieve.  The larger the remote balance, the greater amount of satoshis you can recieve in payments. 
+
+The maximum amount of incoming payment you can recieve is determined by the highest inbound liquidity of a single channel. 
+
+### Channel Sizes
+As the price of Bitcoin increases overtime, a smaller amount of satoshis represents a greater amount of value, thus these general guidelines may change.
+
+- It is recommended to avoid opening channels below `200,000` - `500,000` satoshis. I tend not to open channels smaller than `1,000,000` satoshis, and no larger than `3,000,000` satoshis.
+- If a channel is too small, it may result in the inability to close that channel when `on-chain` fees are high. This can leave a channel vulnerable when a counterparty tries to close with a previous channel state.
+- The maximum size of payments made or routed is limited by the highest directional liquidity of a single active channel.
+- One big channel to a well connected and stable node (high uptime) is much more useful to the Lightning Network than many small ones. Allocate your liquidity with forethought, and a desire to build useful links in the Lightning Network. Creating these useful links (payment paths) between nodes is what sets up your node to be a desirable payment path in the future as the network recognizes your nodes stablity and maturity. 
+- Consider opening channels with nodes who's operator can be contacted in case of a problem. Channels with large amounts of local and remote liquidity, established with stable (high uptime), well connected nodes are the goal.
+
+### Finding Peers To Connect With
+Opening your first channel on the Lightning Network should prioritize network reach, by selecting a very well connected node. This ensures we will be able to route payments to as many nodes as possible on the network with our first channel.
+
+We should also avoid connecting with an exchanges' node at first while we learn to operate a lightning node. Due to the nature of an exchange, they can quickly imbalance a channel.  
+
+- [1ML - Lightning Nodes - Top Network Reach](https://1ml.com/node?order=nodeconnectednodecount)
+
+ 1ML is a handy Lightning Network directory of nodes, which grades nodes by their capacity, number of open channels, age, growth metrics, and availability (uptime). The smaller the rankings are for a node listed on 1ML, the better it is.
+
+- [Moneni - Lightning Node Match](https://moneni.com/mcb/nodematch)
+
+ Lightning Node Match is another handy tool which searches the network for public nodes which would give you the best additional reach, taking into consideration the channel(s) you already have open. 
+
+ This tool does not consider capacity when recommending nodes and prioritizes network reach only (maximizing the number of nodes reached in a minimal number of hops).
+
+### Opening Channels & On-Chain Bitcoin Fees
+
+- Opening or closing a lightning channel is an `on-chain` transaction.
+
+- The time it takes to open or close a channel depends on the congestion of the bitcoin mempool, and the sats/byte fee used when opening or closing that channel. [mempool.space - Bitcoin Mempool & Fee Estimates](https://mempool.space).
+
+### Tor Nodes
+The Tor (The Onion Router) network is designed to conceal the participant's IP address and geographical location. 
+
+- Lightning Network nodes who's traffic is routed through Tor can open a channel with any node.
+
+- Lightning Network nodes that route their traffic through the "clearnet" are not able to initate opening a channel with a node behind Tor if they are not already added as a peer to the node running behind Tor. Where as, the Tor node can initate the opening of a channel with a clearnet node. 
+
+### Routing Payments
+A conceptual illustration of how payment routing works on lightning.
+
+- Consider a lightning node `B` in a serial connection of nodes `A` `<->` `B` `<->` `C`
+- If node `A` wants to make a payment to node `C`, one hop will be required through node `B` to make that payment. 
+- Node `A` pays node `B` the amount of satoshis it wants to send to node `C`. Node `B` then pushes the same amount of satoshis it recieved from node `A` to node `C`.
+- The capacity of channels never changes, only moves from one side of a channel to the other and vice versa. 
+- The payment process is all or nothing, meaning there is no risk of a payment getting stuck in the network on route to it's destination.
+
+### Lightning Network Routing Fees
+
+`On-Chain` Bitcoin transaction fees are dictated by a free market demand of desired settlement times. If you want your payment to be included in the next mined block, a fee larger than the majority of transactions in the mempool will help ensure your transaction is included in the next block and is settled quickly. 
+
+`Off-Chain` Bitcoin transactions on the Lightning Network correspond to the amount of satoshis that are being routed in a payment. When a payment is routed, the fee is calculated using the following components:
+
+- Base Fee: The default base fee is `1,000` millisat, meaning `1` satoshi fee per every routed payment. 
+
+- Proportional Fee: The default proportional fee is `.000001`, meaning there is an additional `1` satoshi charged for every million satoshis routed in the payment.
+
+- There are no Lightning Network fees for payments made in a direct channel between two connected peers. 
+
+Avoid setting a zero routing fee, associating a zero cost of routing payments through your node can leave you open for liquidity Denial of Service attacks on your node, quickly draining the balance of your local side of channel(s). 
+
+When you open new channel(s), leave the fee rates at their default value. Observe their activity over the course of a month or two, and identify which channels are being used for routing to help inform your decisions going forward in respect to the fees you set for each channel. 
+
+[Lightning Node Management - OpenOMS](https://openoms.gitbook.io/lightning-node-management/)
 
 ------------
 
@@ -55,7 +136,7 @@ In the current iteration of the Loop software, two swap types are supported:
 
 ------------
 
-### How to Loop Out
+### How to Loop Out (Create Inbound Liquidity)
 
 Log into your node via `SSH`
 ```
@@ -136,7 +217,7 @@ The loop out process will typically take about 30 minutes until you will see fur
 [![https://i.imgur.com/ugwanXq.png](https://i.imgur.com/ugwanXq.png "https://i.imgur.com/ugwanXq.png")](https://i.imgur.com/ugwanXq.png "https://i.imgur.com/ugwanXq.png")
 [![https://i.imgur.com/T8lcNj7.png](https://i.imgur.com/T8lcNj7.png "https://i.imgur.com/T8lcNj7.png")](https://i.imgur.com/T8lcNj7.png "https://i.imgur.com/T8lcNj7.png")
 
-#### 🎉 Channel rebalancing successful! 
+#### 🎉 Channel rebalancing successful! You now have inbound liqudity.
 
 [![https://i.imgur.com/dQPJmy7.png](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")
 
