@@ -48,7 +48,7 @@ Split Terminal Window Horizontally | `CTRL` + `SHIFT` + `O`
 
 ------------
 
-### SSH - Logging into your myNode (CLI)
+### SSH - Logging into your myNode (CLI) on LAN (Local Area Network)
 Use `SSH` to login to your myNode via `Terminator`.
 ```
 ssh mynode.local -l admin
