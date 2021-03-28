@@ -30,6 +30,9 @@ A collection of resources for general bitcoin related information to advanced bi
 #### 📌 A Closer Look at Submarine Swaps in the Lightning Network
 - [A Closer Look at Submarine Swaps in the Lightning Network](https://blog.muun.com/a-closer-look-at-submarine-swaps-in-the-lightning-network/ "A Closer Look at Submarine Swaps in the Lightning Network")
 
+#### Lightning Resources - Discover All The Ways You Can Delve Into the World of The Lightning Network
+- [LightningHood.com - Discover All The Ways You Can Delve Into the World of The Lightning Network](https://lightninghood.com/lightning-resources/)
+
 ## ₿ Bitcoin 
 #### 📌 Bitcoin Security Guide
 - [bitcoinsecurity.guide](https://bitcoinsecurity.guide/ "bitcoinsecurity.guide")
