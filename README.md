@@ -2,7 +2,7 @@
 
 An aggregation of sourced resources and original documentation dedicated the operation of a bitcoin node. 
 
-All documentation was written or referenced from the perspective of a user of myNode ([mynodebtc.com](http://mynodebtc.com "mynodebtc.com")), and stem from my experience in running a bitcoin full node.
+All documentation was written or referenced from the perspective of a user of myNode ([mynodebtc.com](http://mynodebtc.com "mynodebtc.com")), and stem from my experience running a bitcoin full node.
 
 - ###  📚 [Knowledge Resources](https://github.com/e-corp-sam-sepiol/bitcoin-node/blob/main/knowledge_resources.md "Knowledge Resources")
 A collection of resources for general bitcoin related information to advanced bitcoin node operation and maintenance.
