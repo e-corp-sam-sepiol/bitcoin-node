@@ -45,21 +45,6 @@ As the price of Bitcoin increases overtime, a smaller amount of satoshis represe
 - One big channel to a well connected and stable node (high uptime) is much more useful to the Lightning Network than many small ones. Allocate your liquidity with forethought, and a desire to build useful links in the Lightning Network. Creating these useful links (payment paths) between nodes is what sets up your node to be a desirable payment path in the future as the network recognizes your nodes stablity and maturity. 
 - Consider opening channels with nodes who's operator can be contacted in case of a problem. Channels with large amounts of local and remote liquidity, established with stable (high uptime), well connected nodes are the goal.
 
-### Finding Peers To Connect With
-Opening your first channel on the Lightning Network should prioritize network reach, by selecting a very well connected node. This ensures we will be able to route payments to as many nodes as possible on the network with our first channel.
-
-We should also avoid connecting with an exchanges' node at first while we learn to operate a lightning node. Due to the nature of an exchange, they can quickly imbalance a channel.  
-
-- [1ML - Lightning Nodes - Top Network Reach](https://1ml.com/node?order=nodeconnectednodecount)
-
- 1ML is a handy Lightning Network directory of nodes, which grades nodes by their capacity, number of open channels, age, growth metrics, and availability (uptime). The smaller the rankings are for a node listed on 1ML, the better it is.
-
-- [Moneni - Lightning Node Match](https://moneni.com/mcb/nodematch)
-
- Lightning Node Match is another handy tool which searches the network for public nodes which would give you the best additional reach, taking into consideration the channel(s) you already have open. 
-
- This tool does not consider capacity when recommending nodes and prioritizes network reach only (maximizing the number of nodes reached in a minimal number of hops).
-
 ### Opening Channels & On-Chain Bitcoin Fees
 
 - Opening or closing a lightning channel is an `on-chain` transaction.
@@ -99,6 +84,21 @@ Avoid setting a zero routing fee, associating a zero cost of routing payments th
 When you open new channel(s), leave the fee rates at their default value. Observe their activity over the course of a month or two, and identify which channels are being used for routing to help inform your decisions going forward in respect to the fees you set for each channel. 
 
 [Lightning Node Management - OpenOMS](https://openoms.gitbook.io/lightning-node-management/)
+
+### Finding Peers To Connect With
+Opening your first channel on the Lightning Network should prioritize network reach, by selecting a very well connected node. This ensures we will be able to route payments to as many nodes as possible on the network with our first channel.
+
+We should also avoid connecting with an exchanges' node at first while we learn to operate a lightning node. Due to the nature of an exchange, they can quickly imbalance a channel.  
+
+- [1ML - Lightning Nodes - Top Network Reach](https://1ml.com/node?order=nodeconnectednodecount)
+
+ 1ML is a handy Lightning Network directory of nodes, which grades nodes by their capacity, number of open channels, age, growth metrics, and availability (uptime). The smaller the rankings are for a node listed on 1ML, the better it is.
+
+- [Moneni - Lightning Node Match](https://moneni.com/mcb/nodematch)
+
+ Lightning Node Match is another handy tool which searches the network for public nodes which would give you the best additional reach, taking into consideration the channel(s) you already have open. 
+
+ This tool does not consider capacity when recommending nodes and prioritizes network reach only (maximizing the number of nodes reached in a minimal number of hops).
 
 ------------
 
