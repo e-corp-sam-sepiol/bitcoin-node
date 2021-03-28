@@ -11,7 +11,7 @@ By running a Bitcoin and Lightning on your myNode device, you maintain all the s
 - ###  🧪 [Learning Lab Setup](https://github.com/e-corp-sam-sepiol/bitcoin-node/blob/main/learning_lab.md "Learning Lab Setup")
 The related user documentation was created using the following software and configurations.
 - ###  🌩️ [Lightning Network](https://github.com/e-corp-sam-sepiol/bitcoin-node/blob/main/lightning_network.md "Lightning Network")
-The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trustedthird parties.
+The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trusted third parties.
 
 ------------
 
