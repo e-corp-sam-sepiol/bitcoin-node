@@ -32,7 +32,7 @@ By running a Bitcoin and Lightning on your myNode device, you maintain all the s
 *This table contains some of the key features that make myNode the bitcoin software stack that I run.*
 
 ------------
-## 📌 Operating a Lightning Network Node
+## 📌 Why Operate Your Own Lightning Network Node?
 There are many reasons why you might want to set up your own Lightning node. They include:
 
 - To be a full, active participant in the Lightning Network, not just an end-user.
