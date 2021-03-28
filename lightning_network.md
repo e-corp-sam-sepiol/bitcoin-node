@@ -17,7 +17,7 @@ Create a lightning wallet and initalize the 	`lnd` daemon, syncing your node to 
 #### 2. [Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Ride the Lightning")
 Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
 You can use RTL from any browser that is able to access your myNode installation. Useful for graphical management and monitoring of your lightning node.
-#### 3. [Thunderhub](https://mynodebtc.github.io/lightning/thunderhub.html#introduction "Thunderhub")
+#### 3. [ThunderHub](https://mynodebtc.github.io/lightning/thunderhub.html#introduction "Thunderhub")
 ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX. Useful for graphical management and monitoring of your lightning node.
 
 ------------
