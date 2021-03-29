@@ -104,8 +104,11 @@ We should also avoid connecting with an exchanges' node at first while we learn 
 ------------
 
 ## 🔑 Balance of Satoshis
-#### [https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
+[https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
+
 Tool for working with the balance of your satoshis on LND.
+
+*This section assumes you have active channel(s) open with peers.*
 
 ### Installation
 ```
