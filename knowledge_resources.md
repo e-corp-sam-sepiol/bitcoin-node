@@ -18,6 +18,9 @@ A collection of resources for general bitcoin related information to advanced bi
 
 ## 🌩️ Lightning Network 
 
+#### 📌 LN Things - Elle Mouton - Multi Part Blog Series Explaining Lightning Network
+- [LN Things - Elle Mouton](https://www.ellemouton.com/blog)
+
 #### 📌 📖 Mastering the Lightning Network
 - [Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)](https://github.com/lnbook/lnbook#mastering-the-lightning-network "Mastering the Lighning Network - Andreas M. Antonopoulos (@aantonop), Olaoluwa Osuntokun (@roasbeef), Rene Pickhardt (@renepickhardt)")
 
