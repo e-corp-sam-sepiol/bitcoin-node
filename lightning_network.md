@@ -1,5 +1,5 @@
 # 🌩️ Lightning Network 
-#### [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
+[http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
 
 The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trusted third parties.
 
@@ -23,6 +23,7 @@ ThunderHub is an open-source LND node manager to monitor your node and manage ch
 ------------
 
 # Lightning Node Management - Overview
+[Lightning Node Management - OpenOMS](https://openoms.gitbook.io/lightning-node-management/)
 
 ### Peers & Channels
 - Peers are Lightning nodes which are connected to each other over the internet (TCP/IP).
@@ -82,8 +83,6 @@ A conceptual illustration of how payment routing works on lightning.
 Avoid setting a zero routing fee, associating a zero cost of routing payments through your node can leave you open for liquidity Denial of Service attacks on your node, quickly draining the balance of your local side of channel(s). 
 
 When you open new channel(s), leave the fee rates at their default value. Observe their activity over the course of a month or two, and identify which channels are being used for routing to help inform your decisions going forward in respect to the fees you set for each channel. 
-
-[Lightning Node Management - OpenOMS](https://openoms.gitbook.io/lightning-node-management/)
 
 ### Finding Peers To Connect With
 Opening your first channel on the Lightning Network should prioritize network reach, by selecting a very well connected node. This ensures we will be able to route payments to as many nodes as possible on the network with our first channel.
