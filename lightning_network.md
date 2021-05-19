@@ -1,7 +1,4 @@
-# 🌩️ Lightning Network 
-[http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
-
-[https://www.ellemouton.com/blog](https://www.ellemouton.com/blog "https://www.ellemouton.com/blog")
+# 🌩️ Lightning Network w/ myNode 
 
 The Lightning Network is a decentralized system for instant, high-volume micropayments that removes the risk of delegating custody of funds to trusted third parties.
 
@@ -11,9 +8,13 @@ The Lightning Network does not require cooperation from the counterparty to exit
 
 By embedding the payment conditional upon knowledge of a secure cryptographic hash, payments can be made across a network of channels without the need for any party to have unilateral custodial ownership of funds. The Lightning Network enables what was previously not possible with trusted financial systems vulnerable to monopolies—without the need for custodial trust and ownership, participation on the network can be dynamic and open for all.
 
+[http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
+
+[https://www.ellemouton.com/blog](https://www.ellemouton.com/blog "https://www.ellemouton.com/blog")
+
 ------------
 
-# 🔗 myNode - Getting Started With The Lightning Network
+# Getting Started With The Lightning Network
 #### 1. [Create Lightning Wallet](https://mynodebtc.github.io/lightning/create.html "Create Lightning Wallet")
 Create a lightning wallet and initalize the 	`lnd` daemon, syncing your node to the lightning network.
 #### 2. [Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Ride the Lightning")
@@ -25,7 +26,6 @@ ThunderHub is an open-source LND node manager to monitor your node and manage ch
 ------------
 
 # Lightning Node Management - Overview
-[Lightning Node Management - OpenOMS](https://openoms.gitbook.io/lightning-node-management/)
 
 ### Peers & Channels
 - Peers are Lightning nodes which are connected to each other over the internet (TCP/IP).
@@ -97,106 +97,17 @@ We should also avoid connecting with an exchanges' node at first while we learn 
 
 - [Moneni - Lightning Node Match](https://moneni.com/mcb/nodematch)
 
- Lightning Node Match is another handy tool which searches the network for public nodes which would give you the best additional reach, taking into consideration the channel(s) you already have open. 
+ Lightning Node Match is another handy tool which searches the network for public nodes which would give you the best additional reach, taking into consideration the channel(s) you already have open. This tool does not consider capacity when recommending nodes and prioritizes network reach only (maximizing the number of nodes reached in a minimal number of hops).
+ 
+- [lnrouter.app/graph](https://lnrouter.app/graph)
 
- This tool does not consider capacity when recommending nodes and prioritizes network reach only (maximizing the number of nodes reached in a minimal number of hops).
+ lnrouter.app provides a graph of the lightning network that can help visualize the connectivity between peers. 
+
+[Lightning Node Management - OpenOMS](https://openoms.gitbook.io/lightning-node-management/)
 
 ------------
 
-## 🔑 Balance of Satoshis
-[https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
-
-Tool for working with the balance of your satoshis on LND.
-
-*This section assumes you have active channel(s) open with peers.*
-
-### Installation
-```
-sudo npm install -g balanceofsatoshis
-```
-If you recieve an error message such as this:
-```
-npm WARN ws@7.4.4 requires a peer of bufferutil@^4.0.1 but none is installed. You must install peer dependencies yourself.
-npm WARN ws@7.4.4 requires a peer of utf-8-validate@^5.0.2 but none is installed. You must install peer dependencies yourself.
-```
-You can solve it by doing the following:
-```
-npm install --save-dev "bufferutil@^4.0.1"
-npm install --save-dev "utf-8-validate@^5.0.2"
-```
-`--save-dev` saves the dependency as a development dependency to your [package.json](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file#adding-dependencies-to-a-packagejson-file-from-the-command-line "package.json").
-
-### Help File
-```
-bos help
-```
-
-```
-   bos 8.0.2 
-
-   USAGE
-     bos <command> [options]
-
-   COMMANDS
-     accounting <category>               Get an accounting rundown                         
-     advertise                           Broadcast advertisement                           
-     balance                             Get total tokens                                  
-     broadcast <tx>                      Submit a signed transaction to the mempool        
-     cert-validity-days                  Number of days until the cert is invalid          
-     chain-deposit [amount]              Deposit coins in the on-chain wallet              
-     chain-receive [amount]              Receive funds on-chain via submarine swap         
-     chainfees                           Get the current chain fee estimates               
-     chart-fees-earned [via_peer]        Get a chart of earned routing fees                
-     chart-chain-fees                    Get a chart of chain fee expenses                 
-     chart-fees-paid                     Get a chart of paid routing fees                  
-     chart-payments-received             Get a chart of received payments                  
-     closed                              Get the status of a channel closings              
-     credentials                         Export local credentials                          
-     fanout <size> <count>               Fan out utxos                                     
-     fees                                Show and adjust outbound fee rates                
-     find <query>                        Find a record                                     
-     forwards                            Get forwards                                      
-     fund <address_amount...>            Make a signed transaction spending on-chain funds 
-     gateway                             Request gateway for https://ln-operator.github.io/
-     inbound-channel-rules               Enforce rules for inbound channels                
-     inbound-liquidity                   Get inbound liquidity size                        
-     increase-inbound-liquidity          Increase node inbound liquidity                   
-     increase-outbound-liquidity         Move on-chain funds off-chain                     
-     market [pair] [exchange]            Get the history of prices on a market             
-     nodes [node]                        List and edit saved nodes                         
-     open <peer_public_keys...>          Open channels using an external wallet for funding
-     open-balanced-channel               Open a dual-funded channel with a node            
-     outbound-liquidity                  Get outbound liquidity size                       
-     pay <request>                       Pay a payment request, probing first              
-     peers                               Get a list of channel-connected peers             
-     price [symbols...]                  Get the price                                     
-     probe <to> [amount]                 Check if a payment request is sendable            
-     purchase-ping <to>                  Request a ping payment response from a node       
-     rebalance                           Rebalance funds between peers                     
-     reconnect                           Reconnect to disconnected channel partners        
-     remove-peer [public_key]            Close out with a channel-connected peer           
-     report                              Report about the node                             
-     send <to>                           Send funds to a node                              
-     service-keysend-requests            Respond to keysend service requests               
-     swap-api-key                        Purchase a swap API key or inspect a swap API key 
-     tags [tag]                          View or adjust the set of tagged nodes            
-     telegram                            Post updates to a Telegram bot                    
-     unlock <path_to_password_file>      Unlock wallet if locked                           
-     utxos                               Get a list of utxos                               
-     help <command>                      Display help for a specific command               
-
-   GLOBAL OPTIONS
-     -h, --help         Display help                                      
-     -V, --version      Display version                                   
-     --no-color         Disable colors                                    
-     --quiet            Quiet mode - only displays warn and error messages
-     -v, --verbose      Verbose mode - will also output debug messages    
-
-```
-------------
-
-## 🧅 Payment Routing (Onion Routing)
-[![Multi Hop Payment](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")](https://blog.lightning.engineering/assets/images/multihop.png "Multi Hop Payment")
+## Payment Routing
 #### [Routing vs. Path Finding](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-vs-path-finding "Routing vs. Path Finding")
 Path Finding, which is covered in [[path_finding]](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#path_finding "[path_finding]") is the process of finding and choosing a contiguous path made of payment channels which connects the sender `A` to the recipient `B`. The sender of a payment does the path finding, by examining the channel graph which they have assembled from channel announcements gossiped by other nodes.
 
@@ -208,65 +119,23 @@ An important rule of thumb is that it is possible for a path to exist between `A
 
 Due to the use of [onion routing](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-a-payment "onion routing"), intermediary nodes are only explicitly aware of the one node preceding them and the one node following them in the route. They will not necessarily know who is the sender and recipient of the payment. This enables fans to use intermediary nodes to pay Dina, without leaking private information and without risking theft.
 
-------------
-
-[Balance of Satoshis](https://github.com/alexbosworth/balanceofsatoshis "Balance of Satoshis"), written by Alex Bosworth, can help us simulate lightning network payments without actually paying anything. This can help us probe the network, and acquire information regarding our capability of routing payments.
-
-```
-bos help probe
-```
-```
-   bos 8.0.2 
-   USAGE
-     bos probe <to> [amount]
-     Simulate paying a payment request without actually paying it
-
-   ARGUMENTS
-     <to>          Payment request or node public key            required      
-     [amount]      Amount to probe, default: request amount      optional      
-
-   OPTIONS
-     --avoid <pubkey>        Avoid forwarding through node                           optional                    
-     --find-max              Find the maximum routeable amount on success route      optional      default: false
-     --in <public_key>       Route through specific peer of destination              optional                    
-     --max-paths <max>       Maximum paths to use for find-max                       optional      default: 1    
-     --no-color              Mute all colors                                         optional      default: false
-     --node <node_name>      Node to use for payment request check                   optional                    
-     --out <public_key>      Make first hop through peer                             optional                    
-```
-
-[1ml.com](https://1ml.com/ "1ml.com") is a Lightning Network search and analysis engine, which provides useful network metrics associated with nodes that can help inform our decisions to open channel(s) with one node vs another node. We can use [1ml.com](https://1ml.com/ "1ml.com") to find the `public id` of lightning network nodes when learning how to use the `bos` command `probe`.
-
-My bitcoin node currently has three active channels with other lightning nodes on the network. When I use the `probe` command, the process will run by using one of the three channels I have open, as these channels are my payment gateway to the rest of the lightning network.
-
-------------
-
-### BOS Probe
-Let's `probe` a payment route to [Bitrefill.com](http://bitrefill.com "Bitrefill.com")'s lightning node:
-- [Public Key: 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f](https://1ml.com/node/030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f "Public Key: 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f")
-
-```
-bos probe <public id of node we want to route to> --find-max
-```
-
-`--find-max` Find the maximum routeable amount on success route.
-
-```
-bos probe 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f --find-max
-```
-[![bos probe](https://i.imgur.com/VkVB2m9.png "bos probe")](https://i.imgur.com/VkVB2m9.png "bos probe")
-
-The maximum payment I can route on the lightning network to Bitrefill.com's node is `0.01230734` or `1,230,734` satoshis. The payment would be routed through `LightningTo.Me`.
-
-`--max-paths` can help us `probe` multiple paths to the same payment destination.
-
-Let's see if I can find three different payment routes to Bitrefill.com:
-```
-bos probe 030c3f19d742ca294a55c00376b3b355c3c90d61c6b6b39554dbc7ac19b141c14f --find-max --max-paths 3
-```
-[![payment routing](https://i.imgur.com/gsgqaHJ.png "payment routing")](https://i.imgur.com/gsgqaHJ.png "payment routing")
-
 -----------------
+
+## 🔑 Balance of Satoshis
+[https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
+
+[Balance of Satoshis](https://github.com/alexbosworth/balanceofsatoshis "Balance of Satoshis"), written by Alex Bosworth, can help us simulate lightning network payments without actually paying anything. This can help us probe the network, and acquire information regarding our capability of routing payments to others and ourselves.
+
+*This section assumes you have active channel(s) open with peers.*
+
+As of myNode version v0.2.33, users are able to install Balance of Satoshis via the "Applications" manager on the home page of mynode.local
+
+### Help File
+```
+bos help
+```
+
+------------
 
 # ⚖️ Managing Channel Balances 
 [![channel_1](https://i.imgur.com/HQI3THY.png "channel_1")](https://i.imgur.com/HQI3THY.png "channel_1")
