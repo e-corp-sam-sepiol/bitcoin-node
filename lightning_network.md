@@ -8,7 +8,7 @@ The Lightning Network does not require cooperation from the counterparty to exit
 
 By embedding the payment conditional upon knowledge of a secure cryptographic hash, payments can be made across a network of channels without the need for any party to have unilateral custodial ownership of funds. The Lightning Network enables what was previously not possible with trusted financial systems vulnerable to monopolies—without the need for custodial trust and ownership, participation on the network can be dynamic and open for all.
 
-## Helpful Resources To Guide You
+## 📌 Helpful Resources To Guide You
 
 * [https://docs.lightning.engineering/](https://docs.lightning.engineering/)
 
@@ -28,7 +28,7 @@ BTC Sessions gives a presentation and tutorial on how to run your Bitcoin Lightn
 
 ------------
 
-# Joining the Lightning Network
+# 🔌 Joining the Lightning Network
 
 In order to join the Lightning Network you must create a lightning wallet. Once your lightning wallet is created you must open channel(s) with peers to bootstrap your connectivity to the network. 
 
@@ -217,7 +217,7 @@ Lightning Loop and Circular Rebalancing are two different techniques you can use
 
 * [Announcing Lightning Terminal](https://lightning.engineering/posts/2020-08-04-lightning-terminal/)
 
-#### 🎉 Channel rebalancing successful! You now have inbound liqudity.
+🎉 Successful channel rebalancing with Lightning Terminal! You now have inbound liqudity.
 
 
 ------------
@@ -269,7 +269,7 @@ bos rebalance --amount 2000000 --out 03668... --in 03f11... --max-fee-rate 700
 
 [![bos](https://i.imgur.com/unqWkoS.png "bos")](https://i.imgur.com/unqWkoS.png "bos")
 
-* Successful rebalancing! Balance of Satoshis `bos` was able to reblance `495,959` satoshis from `Channel A` to `Channel G` for a total fee of `653` satoshis. 
+* 🎉 Successful rebalancing! Balance of Satoshis `bos` was able to reblance `495,959` satoshis from `Channel A` to `Channel G` for a total fee of `653` satoshis. 
 
 [![thunderhub](https://i.imgur.com/0xjQ3lB.png "thunderhub")](https://i.imgur.com/0xjQ3lB.png "thunderhub")
 
