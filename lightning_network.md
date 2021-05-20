@@ -8,9 +8,19 @@ The Lightning Network does not require cooperation from the counterparty to exit
 
 By embedding the payment conditional upon knowledge of a secure cryptographic hash, payments can be made across a network of channels without the need for any party to have unilateral custodial ownership of funds. The Lightning Network enables what was previously not possible with trusted financial systems vulnerable to monopolies—without the need for custodial trust and ownership, participation on the network can be dynamic and open for all.
 
-[http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
+## Helpful Resources To Get You Started
 
-[https://www.ellemouton.com/blog](https://www.ellemouton.com/blog "https://www.ellemouton.com/blog")
+* [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
+
+* [https://www.ellemouton.com/blog](https://www.ellemouton.com/blog "https://www.ellemouton.com/blog")
+
+* [Bitcoin Kindergarten - #82 Lightning Routing w/beeforbitcoin1](https://youtu.be/qnj-ix45tVw?t=137)
+
+@beeforbitcoin1 gives a presentation on the steps someone who is trying to setup their own Bitcoin Lightning routing node should consider and use as a guide.
+
+* [BTC Sessions - How To Run A Bitcoin Lightning Network Node](https://youtu.be/KItleddMYFU?t=265)
+
+BTC Sessions gives a presentation and tutorial on how to run your Bitcoin Lightning node using the Umbrel software stack, however you can easily perform the same tasks shown in the video in myNode. 
 
 ------------
 
@@ -124,7 +134,6 @@ Due to the use of [onion routing](https://github.com/lnbook/lnbook/blob/develop/
 -----------------
 
 ## 🔑 Balance of Satoshis
-[https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
 
 [Balance of Satoshis](https://github.com/alexbosworth/balanceofsatoshis "Balance of Satoshis"), written by Alex Bosworth, can help us simulate lightning network payments without actually paying anything. This can help us probe the network, and acquire information regarding our capability of routing payments to others and ourselves.
 
@@ -136,6 +145,8 @@ As of myNode version v0.2.33, users are able to install Balance of Satoshis via 
 ```
 bos help
 ```
+
+[https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
 
 ------------
 
@@ -190,6 +201,18 @@ The fees to exchange lightning network Bitcoin to `on-chain` Bitcoin are larger 
 
 * This strategy requires the existence of a circular and well funded route. The size of the attempted rebalancing payment is capped by the route at the moment of rebalancing. The longer the route, the more chances of getting a smaller cap. 
 
+[Muun Wallet - Rebalancing Strategies](https://blog.muun.com/rebalancing-strategies-overview/)
+
+## Cost / Benefit Analysis - Looping Out vs. Circular Rebalance
+
+|    Tools that Rebalance Channels    |                              Pros                             |                                                                   Cons                                                                  |
+|:-----------------------------------:|:-------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------:|
+|         Balance of Satoshis         | Cheaper rebalancing fees than Looping Out.                    | Requires the use of the CLI (Command Line Interface).                                                                                   |
+|                                     | Faster than Looping Out.                                      | Amount you can circular rebalance depends on the current state of liquidity in your peer's channel and the peers they are connected to. |
+| Lightning Loop (Lightning Terminal) | Non-custodial and trustless way to acquire inbound liquidity. | Fees are much higher than circular rebalancing, Loop Out while fees are cheap to help.                                                  |
+|                                     | Lightning Terminal is an easy to use UI, no CLI needed.       | Takes some time to complete (approximately 30 minutes), and it is not always successful.                                                |
+
+Lightning Loop and Circular Rebalancing are two different techniques you can use to rebalance a channel, both serving a different purpose. The choice of which tool you want to use is based on your discretion.
 
 ------------
 
@@ -201,9 +224,10 @@ As of myNode version v0.2.30, Lighting Terminal has been added to the myNode sof
 
 #### 🎉 Channel rebalancing successful! You now have inbound liqudity.
 
-[![https://i.imgur.com/dQPJmy7.png](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")](https://i.imgur.com/dQPJmy7.png "https://i.imgur.com/dQPJmy7.png")
 
 ------------
+
+### Circular Rebalance w/ Balance of Satoshis
 
 ------------
 
