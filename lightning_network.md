@@ -26,6 +26,23 @@ Technically written blog that describes the functionality of the Lightning Netwo
 
 BTC Sessions gives a presentation and tutorial on how to run your Bitcoin Lightning node using the Umbrel software stack, however you can easily perform the same tasks shown in the video in myNode. 
 
+* [Lightning Labs: What makes a good routing node?](https://docs.lightning.engineering/the-lightning-network/routing/what-makes-a-good-routing-node)
+
+What makes a good routing node? To successfully route bitcoin in the Lightning Network, a node needs to provide five basic functions.
+
+> Availability: A routing node needs to be available. That means it needs to be running and maintain active channels with the network. If you want to let others open channels with you, you will also need to allow for incoming connections.
+
+> Reliability: To ensure reliable routing, the node needs to have enough channels to other good routing nodes in the network. Private channels are not announced to the network and therefore not counted. Private channels  can present additional opportunities for routing when others open channels with them, creating what is referred to as a Gateway node.
+
+> Active: Ideally, all of these channels are available and not disabled. Avoid peering publicly with non-routing nodes.
+Capitalization: Channels need to be well capitalized in order to efficiently route payments. That means they need to have sufficient capacity, with enough incoming and outgoing liquidity.
+
+> Buffer: Each channel needs to maintain some buffer capital, meaning a minimum balance of outgoing and incoming capacity. This is to ensure the channel is able to route at all times, as other nodes may no longer choose you as a hop if they experience routing failures due to low buffer capital.
+
+* [Lightning Labs: Identifying good peers](https://docs.lightning.engineering/the-lightning-network/routing/identify-good-peers)
+
+> Whether you’re primarily using the Lightning Network to send or receive payments, or if you yourself are looking to run a routing node, identifying good peers is crucial to using the Lightning Network. By connecting with good peers, you become a good peer yourself, allowing the network to grow without choke points or centralization worries.
+
 ------------
 
 # 🔌 Joining the Lightning Network
@@ -128,7 +145,7 @@ Lightning Node management documentation provided by RaspiBlitz.
 
 -----------------
 
-# 🔑 Balance of Satoshis
+# ⚖️ Balance of Satoshis
 
 > As of myNode version v0.2.33, users are able to install Balance of Satoshis via the "Applications" manager on the home page of mynode.local
 
@@ -145,7 +162,7 @@ bos help
 
 ------------
 
-# ⚖️ Managing Channel Balances 
+# 🎚 Managing Channel Balances 
 [![channel_1](https://i.imgur.com/HQI3THY.png "channel_1")](https://i.imgur.com/HQI3THY.png "channel_1")
 
 When a new channel is opened, it is likely that the complete balance will remain on the local side of the channel. This means that we can send satoshis, but cannot recieve any satoshis to `channel_1`.
@@ -154,11 +171,11 @@ Routing transactions for the lightning network will require fairly balanced chan
 
 There are two options to help you manage your lightning channel balance(s) addressed below:
 
-* 1.) Acquiring inbound liquidity to your channel(s) using Lightning Terminal
+* Acquiring inbound liquidity to your channel(s) using Lightning Terminal
 
-* 2.) Using Balance of Satoshis to circularly rebalance your channels. 
+* Using Balance of Satoshis to circularly rebalance your channels. 
 
-## 1. Acquiring Inbound Liquidity
+* ## Acquiring Inbound Liquidity w/ Lightning Terminal (LOOP)
 
 ### Loop (Submarine Swaps)
 #### [https://github.com/lightninglabs/loop](https://github.com/lightninglabs/loop "https://github.com/lightninglabs/loop")
@@ -186,7 +203,7 @@ Looping out from an active channel will require a path to the [LOOP public node]
 
 The fees to exchange lightning network Bitcoin to `on-chain` Bitcoin are larger than what you would pay to circular rebalance a channel, and while looping out can be useful for initally balancing a channel, looping out can also be considered a way to "withdraw" some Bitcoin from an active channel without ever having to close the channel. This can help you withdraw `on-chain` Bitcoin from your large capacity channel, and then use the "withdrawn" looped out `on-chain` Bitcoin to then form another new channel.
 
-## 2. Circular Rebalance Channels w/ Balance of Satoshis
+* ## Circular Rebalance Channels w/ Balance of Satoshis
 
 * Circular payments are a completely off-chain rebalancing strategy where a node makes a payment to itself across a circular path of chained payment channels. For the route to be circular, there should be at least 3 nodes involved.
 
@@ -211,11 +228,15 @@ Lightning Loop and Circular Rebalancing are two different techniques you can use
 
 ------------
 
-### Looping Out (Create Inbound Liquidity) w/ myNode
+### Lightning Terminal - Looping Out (Creating Inbound Liquidity) w/ myNode
 
 > As of myNode version v0.2.30, Lighting Terminal has been added to the myNode software stack. 
 
 * [Announcing Lightning Terminal](https://lightning.engineering/posts/2020-08-04-lightning-terminal/)
+
+[![lit](https://i.imgur.com/PdOSaOF.png "lit")](https://i.imgur.com/PdOSaOF.png "lit")
+
+[![lit](https://i.imgur.com/eUTWcnv.png "lit")](https://i.imgur.com/eUTWcnv.png "lit")
 
 🎉 Successful channel rebalancing with Lightning Terminal! You now have inbound liqudity.
 
@@ -272,6 +293,18 @@ bos rebalance --amount 2000000 --out 03668... --in 03f11... --max-fee-rate 700
 * 🎉 Successful rebalancing! Balance of Satoshis `bos` was able to reblance `495,959` satoshis from `Channel A` to `Channel G` for a total fee of `653` satoshis. 
 
 [![thunderhub](https://i.imgur.com/0xjQ3lB.png "thunderhub")](https://i.imgur.com/0xjQ3lB.png "thunderhub")
+
+------------
+
+Links
+
+* https://terminal.lightning.engineering/#/
+
+* https://lnrouter.app/
+
+* https://lnrouter.app/graph
+
+* https://1ml.com
 
 ------------
 
