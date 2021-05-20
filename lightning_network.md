@@ -8,11 +8,15 @@ The Lightning Network does not require cooperation from the counterparty to exit
 
 By embedding the payment conditional upon knowledge of a secure cryptographic hash, payments can be made across a network of channels without the need for any party to have unilateral custodial ownership of funds. The Lightning Network enables what was previously not possible with trusted financial systems vulnerable to monopolies—without the need for custodial trust and ownership, participation on the network can be dynamic and open for all.
 
-## Helpful Resources To Get You Started
+## Helpful Resources To Guide You
 
-* [http://lightning.network/docs/](http://lightning.network/docs/ "http://lightning.network/docs/")
+* [https://docs.lightning.engineering/](https://docs.lightning.engineering/)
+
+Lightning Labs documentation, helpful resource to a user that is building a Lightning Node. 
 
 * [https://www.ellemouton.com/blog](https://www.ellemouton.com/blog "https://www.ellemouton.com/blog")
+
+Technically written blog that describes the functionality of the Lightning Network in a linear order. Extremely informative reading for those trying to better understand the mechanics of the Lightning Network.
 
 * [Bitcoin Kindergarten - #82 Lightning Routing w/beeforbitcoin1](https://youtu.be/qnj-ix45tVw?t=137)
 
@@ -24,15 +28,18 @@ BTC Sessions gives a presentation and tutorial on how to run your Bitcoin Lightn
 
 ------------
 
-# Getting Started With The Lightning Network
-#### 1. [Create Lightning Wallet](https://mynodebtc.github.io/lightning/create.html "Create Lightning Wallet")
+# Joining the Lightning Network
+
+In order to join the Lightning Network you must create a lightning wallet. Once your lightning wallet is created you must open channel(s) with peers to bootstrap your connectivity to the network. 
+
+* #### [Create Lightning Wallet](https://mynodebtc.github.io/lightning/create.html "Create Lightning Wallet")
 Create a lightning wallet and initalize the 	`lnd` daemon, syncing your node to the lightning network.
-#### 2. [Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Ride the Lightning")
+* #### [Ride the Lightning](https://mynodebtc.github.io/lightning/rtl.html#usage "Ride the Lightning")
 Ride the Lightning is a Lightning wallet and node management tool accessible via a web interface, and is built into myNode.
 You can use RTL from any browser that is able to access your myNode installation. Useful for graphical management and monitoring of your lightning node.
-#### 3. [ThunderHub](https://mynodebtc.github.io/lightning/thunderhub.html#introduction "Thunderhub")
+* #### [ThunderHub](https://mynodebtc.github.io/lightning/thunderhub.html#introduction "Thunderhub")
 ThunderHub is an open-source LND node manager to monitor your node and manage channels via a web-interface. It allows you to take control of the Lightning network with a simple and intuitive UX. Useful for graphical management and monitoring of your lightning node.
-### 4. [Creating a Channel](https://www.ellemouton.com/blog/view/3)
+* #### [Creating a Channel](https://www.ellemouton.com/blog/view/3)
 In order to send or recieve payments over the lightning network, you must create channel(s) with peers on the lightning network. Without active channels, you cannot route payments to others, and no one can route a payment to you. More information regarding peers, channels and channel sizes is covered below.
 
 ------------
@@ -98,8 +105,8 @@ Avoid setting a zero routing fee, associating a zero cost of routing payments th
 
 When you open new channel(s), leave the fee rates at their default value. Observe their activity over the course of a month or two, and identify which channels are being used for routing to help inform your decisions going forward in respect to the fees you set for each channel. 
 
-### Finding Peers To Connect With
-Opening your first channel on the Lightning Network should prioritize network reach, by selecting a very well connected node. This ensures we will be able to route payments to as many nodes as possible on the network with our first channel.
+### Finding Peers To Create Channels With
+Opening your first channel on the Lightning Network should prioritize network reach, by selecting a very well connected and highly liquid node. This ensures we will be able to route payments to as many nodes as possible, and with a large degree of capacity on the network with our first channel.
 
 We should also avoid connecting with an exchanges' node at first while we learn to operate a lightning node. Due to the nature of an exchange, they can quickly imbalance a channel.  
 
@@ -117,36 +124,24 @@ We should also avoid connecting with an exchanges' node at first while we learn 
 
 [Lightning Node Management - OpenOMS](https://openoms.gitbook.io/lightning-node-management/)
 
-------------
-
-## Payment Routing
-#### [Routing vs. Path Finding](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-vs-path-finding "Routing vs. Path Finding")
-Path Finding, which is covered in [[path_finding]](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#path_finding "[path_finding]") is the process of finding and choosing a contiguous path made of payment channels which connects the sender `A` to the recipient `B`. The sender of a payment does the path finding, by examining the channel graph which they have assembled from channel announcements gossiped by other nodes.
-
-Routing refers to the series of interactions across the network that allow a payment to flow from A to B, across the path previously selected by path finding. Routing is the active process of sending a payment on a path, which involves the cooperation of all the intermediary nodes along that path.
-
-An important rule of thumb is that it is possible for a path to exist between `Alice` and `Bob`, yet there may not be an active route on which to send the payment.
-
-- [Exploring Lightning Network Routing](https://blog.lightning.engineering/posts/2018/05/30/routing.html "Exploring Lightning Network Routing")
-
-Due to the use of [onion routing](https://github.com/lnbook/lnbook/blob/develop/routing.asciidoc#routing-a-payment "onion routing"), intermediary nodes are only explicitly aware of the one node preceding them and the one node following them in the route. They will not necessarily know who is the sender and recipient of the payment. This enables fans to use intermediary nodes to pay Dina, without leaking private information and without risking theft.
+Lightning Node management documentation provided by RaspiBlitz.
 
 -----------------
 
-## 🔑 Balance of Satoshis
+# 🔑 Balance of Satoshis
+
+> As of myNode version v0.2.33, users are able to install Balance of Satoshis via the "Applications" manager on the home page of mynode.local
 
 [Balance of Satoshis](https://github.com/alexbosworth/balanceofsatoshis "Balance of Satoshis"), written by Alex Bosworth, can help us simulate lightning network payments without actually paying anything. This can help us probe the network, and acquire information regarding our capability of routing payments to others and ourselves.
 
 *This section assumes you have active channel(s) open with peers.*
-
-As of myNode version v0.2.33, users are able to install Balance of Satoshis via the "Applications" manager on the home page of mynode.local
 
 ### Help File
 ```
 bos help
 ```
 
-[https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
+* [https://github.com/alexbosworth/balanceofsatoshis](https://github.com/alexbosworth/balanceofsatoshis "https://github.com/alexbosworth/balanceofsatoshis")
 
 ------------
 
@@ -159,7 +154,7 @@ Routing transactions for the lightning network will require fairly balanced chan
 
 There are two options to help you manage your lightning channel balance(s) addressed below:
 
-* 1.) Acquiring inbound liquidity to your channel(s)
+* 1.) Acquiring inbound liquidity to your channel(s) using Lightning Terminal
 
 * 2.) Using Balance of Satoshis to circularly rebalance your channels. 
 
@@ -218,7 +213,7 @@ Lightning Loop and Circular Rebalancing are two different techniques you can use
 
 ### Looping Out (Create Inbound Liquidity) w/ myNode
 
-As of myNode version v0.2.30, Lighting Terminal has been added to the myNode software stack. 
+> As of myNode version v0.2.30, Lighting Terminal has been added to the myNode software stack. 
 
 * [Announcing Lightning Terminal](https://lightning.engineering/posts/2020-08-04-lightning-terminal/)
 
@@ -228,6 +223,55 @@ As of myNode version v0.2.30, Lighting Terminal has been added to the myNode sof
 ------------
 
 ### Circular Rebalance w/ Balance of Satoshis
+
+This example is done using Balance of Satoshis `bos` and ThunderHub. 
+
+* Connect to myNode via `SSH`
+
+```
+ssh mynode.local -l admin
+```
+
+* Find a channel that you want to rebalance with `bos` by browsing the 'Channels' section of ThunderHub. 
+
+[![thunderhub](https://i.imgur.com/4cIkhgG.png "thunderhub")](https://i.imgur.com/4cIkhgG.png "thunderhub")
+
+* I've chosen to rebalance `Channel A` to `Channel G` because I have all local balance on `Channel A` and all remote balance on `Channel G`. 
+
+* Note the public keys of the nodes we are connected to in `Channel A` and `Channel G`. 
+
+`Channel A Public Key: 03668...`
+
+`Channel G Public Key: 03f11...`
+
+When attempting to rebalance using Balance of Satoshis, it is important to note that while you may set an amount of satoshis to rebalance, `bos` will route as many satoshis as it can up and to that targeted amount of satoshis. The amount you will be able to rebalance will be different for every channel you have open, for every time you attempt to rebalance the channel(s) the balances in active channels move around on active nodes. 
+
+In order to rebalance a channel, we have to probe for a route and a minimum fee rate that must be paid to make that rebalancing happen. 
+
+* Probing for a route to rebalance out of `Channel A` and into `Channel G`
+
+The channel capacity between `Channel A` and `Channel G` is decently large, so I am going to attempt to rebalance up to `2,000,000` satoshis from `A` to `G`. 
+
+The first command specifies a `--max-fee` of `1`, this means that the amount in fees we are willing to pay is `1 satoshi` and thus our rebalancing attempt will not go through. This is our desired outcome because we first want to estimate the fees, then pay them.
+
+```
+bos rebalance --amount 2000000 --out 03668... --in 03f11... --max-fee 1
+```
+[![bos](https://i.imgur.com/G8SVcOd.png "bos")](https://i.imgur.com/G8SVcOd.png "bos")
+
+The command results in `needed_max_fee: 264` which gives us a target to give for rebalancing fees. 
+
+The next command will be configured to accept enough fees to make this rebalancing occur. 
+
+```
+bos rebalance --amount 2000000 --out 03668... --in 03f11... --max-fee-rate 700
+```
+
+[![bos](https://i.imgur.com/unqWkoS.png "bos")](https://i.imgur.com/unqWkoS.png "bos")
+
+* Successful rebalancing! Balance of Satoshis `bos` was able to reblance `495,959` satoshis from `Channel A` to `Channel G` for a total fee of `653` satoshis. 
+
+[![thunderhub](https://i.imgur.com/0xjQ3lB.png "thunderhub")](https://i.imgur.com/0xjQ3lB.png "thunderhub")
 
 ------------
 
