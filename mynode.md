@@ -7,6 +7,10 @@ myNode is a dedicated device that provides access to the Bitcoin and Lightning n
 
 By running a Bitcoin and Lightning on your myNode device, you maintain all the security and advantages originally intended in the Bitcoin protocol. Information about your Bitcoin addresses and spending is verified by your local node and removes the need to trust online 3rd parties for getting information about your funds.
 
+* 📌 [Ministry of Nodes (@_k3tan) - myNode video series](https://www.youtube.com/watch?v=UYUfXWlAleA&list=PLCRbH-IWlcW0KP8DxyWWrqahGafZyV2HR)
+
+* 📌 [BTC Sessions - myNode: How to run a Bitcoin Node - Parts, assembly and software installation](https://youtu.be/GMovZg_3ERs?t=149)
+
 *You may use any node software stack you would like, this documentation is specific to myNode users.*
 
 | [myNode Features (Premium) ](https://mynodebtc.com/products/premium "myNode Features (Premium) ") |
